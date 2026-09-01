@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,29 @@
 </head>
 <body>
     <h1>Allinsync的教程-WebAPI</h1>
-    <script src="../Web-APIs/Chapter03-DOM.js"></script>
+
+    <div id="div1">欢迎</div>
+    <div class="div2">来到</div>
+    <div id="div3">ElevenNie11</div>
+    <div id="div3">的账号</div>
+    <div class="div4">我会产出关于JS的教程</div>
+    <nav class="div4">[2026.9.1.Allinsync的教程]</nav>
+
+    <ul class = "projectList">
+        <li>项目一</li>
+        <li>项目二</li>
+        <li>项目三</li>
+    </ul>
+
+    <main id="box">
+        <p>原来这里是GitHub账号: ElevenNie11</p>
+        <p>来看看innerHTML</p>
+    </main>
+
+    <script src="../Web-APIs/Chapter03-DOM.js">
+        const firstLi = doucument.querySelector('ul li:first-child'); 
+        console.log(firstLi.textContent); // 控制台打印: 项目一
+    </script>
+
 </body>
 </html>
