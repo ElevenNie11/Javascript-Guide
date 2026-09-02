@@ -1,16 +1,43 @@
 <!DOCTYPE html>
-<html lang="zh-CN">s
-
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>轮播图</title>
+    <title>轮播图-恩佐·费尔南德斯</title>
     <link rel="stylesheet" href="../练习01-轮播图/lunbo.css">
 </head>
 
 <body>
-    
+   <div class="carousel">
+    <!-- 图片区域 -->
+       <div class="images">
+           <img src="../练习01-轮播图/Images/1.jpg" alt="图片1">
+           <img src="../练习01-轮播图/Images/2.jpg" alt="图片2">
+           <img src="../练习01-轮播图/Images/3.jpg" alt="图片3">
+           <img src="../练习01-轮播图/Images/4.jpg" alt="图片4">
+           <img src="../练习01-轮播图/Images/5.jpg" alt="图片5">
+           <img src="../练习01-轮播图/Images/6.jpg" alt="图片6">
+           <img src="../练习01-轮播图/Images/7.jpg" alt="图片7">
+       </div> <!--图片区域结束-->
+
+    <!--按钮区域-->
+         <button class="prev">&lt;</button>  <!-- &lt;是代表< -->
+         <button class="next">&gt;</button>  <!-- &gt;是代表> -->
+
+    <!--小圆点-->
+         <div class="dots">
+             <span class="active"></span>
+             <span></span>
+             <span></span>
+             <span></span>
+             <span></span>
+             <span></span>
+             <span></span>
+         </div><!--小圆点结束-->
+
+   </div><!--轮播图结束-->
+
+   <!--轮播图脚本-->
     <script src="../练习01-轮播图/lunbo.js"></script>
 </body>
-
 </html>
