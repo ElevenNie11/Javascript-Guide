@@ -1,0 +1,7 @@
+/*在CSS里写好样式，再在JS里通过className来修改元素的类名*/
+.box4{
+    width: 100px;
+    height: 100px;
+    background-color: skyblue;
+    border: 1px solid black;
+}
