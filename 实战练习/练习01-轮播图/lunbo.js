@@ -47,9 +47,12 @@ function prevImage() {
 }
 
 // 点击下一张的按钮
-nextButton.addEventListener('click', nextImage());
+// nextButton.addEventListener('click', nextImage()); 【错误写法】：浏览器执行这行代码的时候，首先看到：nextImage()，就会立刻执行这个函数
+// 有了()，就会立即执行这个函数，然后返回undefined，最后就变成了：nextButton.addEventListener('click', undefined)，所以点击按钮的时候，就不会有任何反应了
+// nextImage不要括号表示：以后用户点击 nextButton 的时候，再调用此函数！！！
+nextButton.addEventListener('click', nextImage);
 // 点击上一张的按钮
-prevButton.addEventListener('click', prevImage());
+prevButton.addEventListener('click', prevImage);
 
 // 点击小圆点切换图片
 dots.forEach((dot, index) => {
@@ -59,4 +62,5 @@ dots.forEach((dot, index) => {
 });
 
 // 自动轮播3s(3000ms)
-setInterval(nextImage(), 3000);
+// setInterval(nextImage(), 3000);    【错误写法】：错误原因同上
+setInterval(nextImage, 3000);
