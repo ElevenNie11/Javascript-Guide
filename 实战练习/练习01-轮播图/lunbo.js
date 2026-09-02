@@ -61,6 +61,6 @@ dots.forEach((dot, index) => {
     });
 });
 
-// 自动轮播3s(3000ms)
-// setInterval(nextImage(), 3000);    【错误写法】：错误原因同上
-setInterval(nextImage, 3000);
+// 自动轮播5s(5000ms)
+// setInterval(nextImage(), 5000);    【错误写法】：错误原因同上
+setInterval(nextImage, 5000);

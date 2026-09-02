@@ -30,6 +30,7 @@
 }
 
 /*当前显示的图片*/
+/*找到.images里面的所有同时拥有<img>标签和active类的元素*/
 .images img.active{
     opacity: 1;
 }
