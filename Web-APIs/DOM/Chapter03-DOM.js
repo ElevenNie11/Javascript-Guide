@@ -106,3 +106,28 @@ const box5 = document.querySelector("#box p:nth-child(5)");
 // box5.classList.add("box4");
 // box5.classList.remove("box4");
 box5.classList.toggle("box4");  // 切换类名（有就删除，没有就添加）
+
+
+
+
+
+//以下内容详细见chapter03-Form.js
+// ------
+//  ------
+//   ------
+//     ------
+//   ------
+//  ------
+// ------
+//========================================操作[表单]元素的属性========================================
+// 1.获取表单元素的值（表单是无法通过innerHTML或innerText获取其内容的！！！）
+// 获取：DOM对象.属性名
+// 设置：DOM对象.属性名 = '值';
+// 表单.value = '值';
+// 表单.type = 'password';
+
+// // 获取元素
+// const inputContent = document.querySelector("#input1");
+// // 获取元素的值（用户输入的值）
+// const value = inputContent.value;
+// console.log(value);  // 打印用户输入的值
