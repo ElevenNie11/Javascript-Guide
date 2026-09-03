@@ -29,7 +29,7 @@ form.addEventListener("submit", e => {
     let genderValue = "";   // 声明一个性别值的变量以便下一步保存性别的值
     //确认性别
     if(gender){
-        genderValue = gender.value;
+        genderValue = gender;
     } 
 
     // 创建用户对象[对象！！！]
