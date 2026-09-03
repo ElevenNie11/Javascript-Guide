@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户兴趣爱好收集</title>
+    <link rel="stylesheet" href="../练习02/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>用户兴趣爱好调查</h1>
+        <p class="description">请填写下面的信息，让我们了解你的兴趣爱好🩵</p>
+        <!--表单form-->
+        <form id="interestForm">
+            <!--1.-->
+            <div class="form-item">
+                <!--for="username"表示：这个label对应的是id="username"的表单元素-->
+                <!--重要！！！--><!--for匹配的是id，而不是name-->
+                <label for="username">用户名：</label>
+                <!--表单提交时，name告诉服务器这个数据叫什么名字(键值对)-->
+                <input type="text" id="username" name="username" placeholder="请输入你的用户名">
+            </div>
+
+            <!--2.-->
+            <div class="form-item">
+                <label for="age">年龄</label>
+                <!--min和max限制年龄范围-->
+                <input type="number" id="age" name="age" min="18" max="100" placeholder="请输入你的年龄">
+            </div>
+
+            <!--3.-->
+            <div class="form-item">
+                <label>性别</label>
+                <!--选项-->
+                <div class="options">
+                    <label><input type="radio" name="gender" value="男">男</label>
+                    <label><input type="radio" name="gender" value="女">女</label>
+                    <label><input type="radio" name="gender" value="保密">保密</label>
+                </div>
+            </div>
+
+            <!--4.兴趣下拉选择框-->
+            <div class="form-item">
+                <label for="favorite">最喜欢的兴趣</label>
+                <select id="favorite" name="favorite">
+                    <option value="">请选择</option>
+                        <option value="游戏">游戏</option>
+                        <option value="音乐">音乐</option>
+                        <option value="电影">电影</option>
+                        <option value="运动">运动</option>
+                        <option value="编程">编程</option>
+                        <option value="阅读">阅读</option>
+                </select>
+            </div>
+
+            <!--5.-->
+            <div class="form-item">
+                <label for="description">兴趣描述：</label>
+                <textarea id="description" name="description" rows="5" placeholder="请简单介绍一下你的兴趣爱好..."></textarea>
+            </div>
+
+            <!--提交按钮/重置按钮-->
+            <div class="buttons">
+                <button type="submit">提交</button>
+                <button type="reset">重置</button>
+            </div>
+        </form><!--表单大容器结束-->
+    </div> 
+    
+    <script src="../练习02-用户兴趣爱好收集/hobbiesScript.js"></script>
+</body>
+</html>
