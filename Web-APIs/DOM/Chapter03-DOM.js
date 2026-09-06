@@ -21,7 +21,7 @@ console.log(div);
 let div2 = document.getElementsByClassName("div2");
 console.log(div2);
 
-// 4.通过CSS选择器获取DOM对象
+// 4.通过CSS选择器获取DOM对象：参数用的是CSS的语法！！！
 // 根据id要加#
 // 根据类名要加.
 // 根据标签名什么都不用加

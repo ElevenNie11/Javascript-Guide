@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>h5自定义属性</title>
+</head>
+<body>
+    <!--自定义属性data-*：标签一律以 data- 开头-->
+    <!--在DOM对象上一律以dataset对象方式获取-->
+    <!--命名规范问题：在html里使用短横线命名法：data-my-interest-->
+    <div data-my-interest="sports" style="color:red;">跑步</div>
+    <div data-my-interest="sports" style="color: aqua;">足球</div>
+    <div data-my-interest="sports" style="font-size: 20px;">篮球</div>
+    <div data-my-interest="sports" style="font-weight: 1000;">排球</div>
+    <script>
+        // data-myInterest 是属性，不是标签名
+        const oneElement = document.querySelector("[data-my-interest]");  // JS通过CSS选择器获取DOM对象，""里的参数用的是CSS选择器的语法
+        console.log(oneElement.dataset);
+        console.log(oneElement.dataset.myInterest);
+
+        const NumbertwoElement = document.querySelector("[data-my-interest]:nth-child(2)");
+        console.log(NumbertwoElement.dataset);
+        console.log(NumbertwoElement.innerText);
+    </script>
+</body>
+</html>

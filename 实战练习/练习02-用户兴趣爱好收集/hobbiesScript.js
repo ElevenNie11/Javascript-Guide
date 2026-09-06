@@ -1,6 +1,7 @@
 // 获取表单
 const form = document.querySelector('#interestForm');
 
+// 监听事件
 // 监听表单提交事件
 form.addEventListener("submit", e => {
     e.preventDefault();  // 阻止表单默认提交行为

@@ -71,3 +71,5 @@ console.log(inputContent.type);       // 打印修改后的类型：password
 //  ------
 // ------
 
+// button.disabled 的默认值为false
+// button.disabled = true; 表示禁用按钮
