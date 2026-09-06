@@ -1,0 +1,76 @@
+/*css样式由ai辅助完成*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f5f8;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 500px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.name-box {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+}
+
+#name {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#startButton {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#startButton:hover {
+    background-color: #555;
+}
+
+.student-list {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.student-list h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.student-list p {
+    line-height: 1.8;
+    color: #666;
+}
