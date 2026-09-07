@@ -6,7 +6,7 @@ const loginButton = document.querySelector("#loginButton");
 const message = document.querySelector('#message');
 
 // 保存正确的验证码
-let corretCode = "";
+let correctCode = "";
 
 // 点击获取验证码（模拟发送：在控制台查看）
 getCodeButton.addEventListener('click', () => {
@@ -18,7 +18,7 @@ getCodeButton.addEventListener('click', () => {
         return;
     }
     // 随机生成6位数的验证码
-    corretCode = Math.floor(100000 + Math.random()*900000).toString();
+    correctCode = Math.floor(100000 + Math.random()*900000).toString();
     // 模拟发送验证码
     console.log('验证码：' + corretCode);
     message.innerText = '验证码已发送成功，请在控制台查看！';
@@ -45,9 +45,17 @@ loginButton.addEventListener('click', () => {
         message.textContent = '请输入验证码';
         return;
     }
-    if(code1 === corretCode){
+    if(code1 === correctCode){
         message.textContent = "验证码正确，验证成功！";
     }else{
         message.textContent = "验证码错误，请重新输入";
     }
 });
+
+
+// 数学函数：随机数
+// Math.random():生成[0,1)的随机小数
+// Math.random()*900000：范围[0,900000)
+// 再加上100000：把范围偏移到：[100000,1000000)正好覆盖100000-999999的全部6位数字
+// Math.floor()：向下取整，得到整数
+// .toString()：转换为字符串验证码
