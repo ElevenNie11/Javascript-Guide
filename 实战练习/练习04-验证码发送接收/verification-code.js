@@ -20,7 +20,7 @@ getCodeButton.addEventListener('click', () => {
     // 随机生成6位数的验证码
     correctCode = Math.floor(100000 + Math.random()*900000).toString();
     // 模拟发送验证码
-    console.log('验证码：' + corretCode);
+    console.log('验证码：' + correctCode);
     message.innerText = '验证码已发送成功，请在控制台查看！';
 
     // 禁用按钮
@@ -40,7 +40,7 @@ getCodeButton.addEventListener('click', () => {
 
 // 点击验证
 loginButton.addEventListener('click', () => {
-    const code1 = code.value;  // 拿到用户输入的验证码的值
+    const code1 = code.value;  // 拿到用户输入的验证码code1的值
     if(code1 === ""){
         message.textContent = '请输入验证码';
         return;
